@@ -10,4 +10,11 @@ terraform {
       version = ">= 0.7.1"
     }
   }
+  cloud {
+    organization = "bankexample"
+
+    workspaces {
+      name = "managed-k8s"
+    }
+  }
 }
