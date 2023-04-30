@@ -6,6 +6,9 @@ provider "registry.terraform.io/dmacvicar/libvirt" {
   constraints = ">= 0.7.1, 0.7.1"
   hashes = [
     "h1:1yEJVPVFkRkbRY63+sFRAWau/eJ0xlecHWLCV8spkWU=",
+    "h1:G114r+ESpxpMCnBxFXZZ3+HktoNK4WXAJ5M3GRwvgBQ=",
+    "h1:ZG+KVAKVm++wfWnGdc8QIFn1LHRycUnmYibMg4REQyk=",
+    "h1:rDm9KgxNWuhdTCJpfepeTzCB/b24bKrOMN57637RZtU=",
     "zh:1c59f2ab68da6326637ee8b03433e84af76b3e3562f251a7f2aa239a7b262a8d",
     "zh:236e24ecf036e99d9d1e2081a39dc9cb4b8993850a37141a1449f20750f883d6",
     "zh:4519c22b1f00c1d37d60ac6c2cb7ad5ab9dbcd44a80b4f61e68aacb54eae017d",
@@ -27,6 +30,9 @@ provider "registry.terraform.io/hashicorp/time" {
   version = "0.9.1"
   hashes = [
     "h1:NUv/YtEytDQncBQ2mTxnUZEy/rmDlPYmE9h2iokR0vk=",
+    "h1:UHcDnIYFZ00uoou0TwPGMwOrE8gTkoRephIvdwDAK70=",
+    "h1:XYUT7lKAKuaHbCTp/WnjWBjz/C86JGvQUfS2s473Pjg=",
+    "h1:ZrIFtdifvwIr1JocYT311cvOgIUdislZuZ2MzZmxQQ0=",
     "zh:00a1476ecf18c735cc08e27bfa835c33f8ac8fa6fa746b01cd3bcbad8ca84f7f",
     "zh:3007f8fc4a4f8614c43e8ef1d4b0c773a5de1dcac50e701d8abc9fdc8fcb6bf5",
     "zh:5f79d0730fdec8cb148b277de3f00485eff3e9cf1ff47fb715b1c969e5bbd9d4",
@@ -47,6 +53,9 @@ provider "registry.terraform.io/volterraedge/volterra" {
   constraints = ">= 0.11.19, 0.11.19"
   hashes = [
     "h1:1j8M50t52o3fnXLktITGuhQsTBAl2XUOBbiIE3Zy7w0=",
+    "h1:2DR4yVVRNissg5pDWeamkJbtrVdLZ7fjc6o5Ta71/hk=",
+    "h1:fqFee1S1F9DRMOZ0kt33VDCKfw7Ticak5JgE4o+/y5g=",
+    "h1:wi9o4zIF1Eiqm5Nm5rr8GfkdjomFfYlncaD5EpsvE2Q=",
     "zh:2de88b50883d7b009a089474bdf02cabeb80528e0b5db116a51e5fff227641b4",
     "zh:48a63a2a3334fea2613904a800c45c9fa793c6b0cf049fc3ed013674111e2e3e",
     "zh:6778e6f3677f1535e4d294b531bc4bdc4eac557df8222031f59a8a2fb6e118c8",
