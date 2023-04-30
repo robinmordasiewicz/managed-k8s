@@ -12,6 +12,10 @@ variable "tenant" {
   type = string
 }
 
+variable "namespace" {
+  type = string
+}
+
 locals {
   hostnames         = concat(var.masternodes, var.workernodes)
   url               = "https://${var.tenant}.console.ves.volterra.io/api"
