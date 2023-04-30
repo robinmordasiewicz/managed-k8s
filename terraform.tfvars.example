@@ -9,22 +9,3 @@ registry_username = "<registry-username>"
 registry_password = "<registry-password>"
 registry_email = "email@example.com"
 registry_server = "https://index.docker.io/v1/"
-
-
-variable "tenant" {
-variable "masternodes" {
-variable "workernodes" {
-variable "libvirt_admin" {
-variable "libvirt_ip" {
-variable "qcow2" {
-variable "cpu" {
-variable "memory" {
-variable "certifiedhardware" {
-variable "latitude" {
-variable "longitude" {
-variable "dnsservers" {
-variable "clustername" {
-variable "k8scluster" {
-variable "token" {
-variable "address" {
-variable "kvmappstack" {
