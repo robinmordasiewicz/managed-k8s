@@ -13,7 +13,7 @@ terraform {
   cloud {
     organization = "${var.tfc_organization}"
     workspaces {
-      name = "${var.tfc_k8s_workspace_name"
+      name = "${var.tfc_k8s_workspace_name}"
     }
   }
 }
