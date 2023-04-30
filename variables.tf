@@ -110,6 +110,11 @@ variable "kvmappstack" {
   default = []
 }
 
+variable "tfc_organization" {
+  type = string
+  description = "The Terraform Cloud organization to create things in"
+}
+
 variable "tfc_email" {
   type = string
   description = "E-mail address of owner"
