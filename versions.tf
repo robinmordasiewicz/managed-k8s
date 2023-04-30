@@ -11,9 +11,9 @@ terraform {
     }
   }
   cloud {
-    organization = "bankexample"
+    organization = "${var.tfc_organization}"
     workspaces {
-      name = "k8s"
+      name = "${var.tfc_k8s_workspace_name"
     }
   }
 }
