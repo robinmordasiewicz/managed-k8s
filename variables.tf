@@ -114,7 +114,3 @@ variable "kvmappstack" {
   default = []
 }
 
-#variable "k8s_cluster_name" {
-#  type = string
-#  description = "ClusterName variable value for k8s workspace"
-#}
