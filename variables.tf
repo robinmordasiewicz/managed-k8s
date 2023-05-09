@@ -114,12 +114,7 @@ variable "kvmappstack" {
   default = []
 }
 
-variable "github_username" {
-  type = string
-  description = "GitHub account username"
-}
-
-variable "k8s_cluster_name" {
-  type = string
-  description = "ClusterName variable value for k8s workspace"
-}
+#variable "k8s_cluster_name" {
+#  type = string
+#  description = "ClusterName variable value for k8s workspace"
+#}
