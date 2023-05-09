@@ -28,7 +28,7 @@ locals {
 
 variable "masternodes" {
   type    = list(string)
-  default = ["main01"]
+  #default = ["main01"]
 }
 
 variable "workernodes" {
