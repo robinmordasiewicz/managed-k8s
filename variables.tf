@@ -7,6 +7,11 @@ variable "VES_P12_PASSWORD" {
   sensitive = true
 }
 
+variable "LIBVIRT_DEFAULT_URI" {
+  type = string
+  default = "qemu:///system"
+}
+
 variable "tenant" {
   type = string
 }
@@ -16,13 +21,14 @@ variable "namespace" {
 }
 
 locals {
-  hostnames         = concat(var.masternodes, var.workernodes)
-  url               = "https://${var.tenant}.console.ves.volterra.io/api"
-  VOLT_API_P12_FILE = var.VOLT_API_P12_FILE
-  VES_P12_PASSWORD  = var.VES_P12_PASSWORD
-  tenant            = var.tenant
-  libvirt_admin     = var.libvirt_admin
-  libvirt_ip        = var.libvirt_ip
+  hostnames           = concat(var.masternodes, var.workernodes)
+  url                 = "https://${var.tenant}.console.ves.volterra.io/api"
+  VOLT_API_P12_FILE   = var.VOLT_API_P12_FILE
+  VES_P12_PASSWORD    = var.VES_P12_PASSWORD
+  LIBVIRT_DEFAULT_URI = var.LIBVIRT_DEFAULT_URI
+  tenant              = var.tenant
+  libvirt_admin       = var.libvirt_admin
+  libvirt_ip          = var.libvirt_ip
 }
 
 variable "masternodes" {
