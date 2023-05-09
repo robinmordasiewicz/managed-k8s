@@ -1,10 +1,10 @@
 # main.tf
 
 module "libvirt" {
-  source = "./libvirt"
+  source             = "./libvirt"
   token              = module.volterraedge.token
   appstacksite       = module.volterraedge.appstacksite
-  LIBVIRT_DEFAULT_URI = local.LIBVIRT_DEFAULT_URI
+  uri                = local.LIBVIRT_DEFAULT_URI
   hostnames          = local.hostnames
   libvirt_admin      = local.libvirt_admin
   libvirt_ip         = local.libvirt_ip
