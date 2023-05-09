@@ -1,6 +1,5 @@
 variable "VOLT_API_P12_FILE" {
   type = string
-  sensitive = true
 }
 
 variable "VES_P12_PASSWORD" {
@@ -28,7 +27,7 @@ locals {
 
 variable "masternodes" {
   type    = list(string)
-  #default = ["main01"]
+  default = ["main01"]
 }
 
 variable "workernodes" {
