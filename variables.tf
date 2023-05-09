@@ -89,6 +89,11 @@ variable "clustername" {
   default = "k8s01-tor"
 }
 
+variable "k8s_cluster_name" {
+  type = string
+  default = "k8s-profile"
+}
+
 variable "localdomain" {
   type    = string
   default = "local"
