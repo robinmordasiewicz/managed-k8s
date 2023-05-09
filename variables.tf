@@ -114,31 +114,6 @@ variable "kvmappstack" {
   default = []
 }
 
-variable "tfc_organization" {
-  type = string
-  description = "The Terraform Cloud organization to create things in"
-}
-
-variable "tfc_email" {
-  type = string
-  description = "E-mail address of owner"
-}
-
-variable "tfc_project" {
-  type = string
-  description = "The project in the Organization"
-}
-
-variable "tfc_k8s_workspace_name" {
-  type = string
-  description = "Kubernetes workspace name"
-}
-
-variable "tfc_k8s_repo" {
-  type = string
-  description = "GitHub repo for k8s"
-}
-
 variable "github_username" {
   type = string
   description = "GitHub account username"
