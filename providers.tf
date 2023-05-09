@@ -1,5 +1,6 @@
 provider "volterra" {
   # api_p12_file = var.VOLT_API_P12_FILE
+  api_p12_file = "volterra.ves.volterra.io.api-creds.p12"
   # api_p12_file     = "${var.tenant}.ves.volterra.io.api-creds.p12"
   # api_cert          = var.VOLT_API_CERT != "" ? "" : var.VOLT_API_CERT
   # api_key           = var.VOLT_API_KEY != "" ? "" : var.VOLT_API_KEY
