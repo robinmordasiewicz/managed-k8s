@@ -10,6 +10,10 @@ variable "libvirt_ip" {
   type    = string
   default = ""
 }
+variable "url" {
+  type    = string
+  default = ""
+}
 variable "clustername" {
   type = string
 }
