@@ -10,7 +10,7 @@ variable "libvirt_ip" {
   type    = string
   default = ""
 }
-variable "url" {
+variable "uri" {
   type    = string
   default = ""
 }
