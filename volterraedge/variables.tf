@@ -22,16 +22,16 @@ variable "volterradomain" {
   default = []
 }
 variable "kvm" {
-    type    = any
-    default = []
+  type    = any
+  default = []
 }
 variable "appstacksite" {
-    type    = any
-    default = []
+  type    = any
+  default = []
 }
 variable "kvmappstack" {
-    type    = any
-    default = []
+  type    = any
+  default = []
 }
 locals {
   hostnames = concat(var.masternodes, var.workernodes)

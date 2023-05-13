@@ -1,17 +1,17 @@
 # main.tf
 
 module "libvirt" {
-  source             = "./libvirt"
-  token              = module.volterraedge.token
-  appstacksite       = module.volterraedge.appstacksite
-  uri                = local.LIBVIRT_DEFAULT_URI
-  hostnames          = local.hostnames
-  libvirt_admin      = local.libvirt_admin
-  libvirt_ip         = local.libvirt_ip
-  latitude           = var.latitude
-  longitude          = var.longitude
-  clustername        = var.clustername
-  qcow2              = var.qcow2
+  source        = "./libvirt"
+  token         = module.volterraedge.token
+  appstacksite  = module.volterraedge.appstacksite
+  uri           = local.LIBVIRT_DEFAULT_URI
+  hostnames     = local.hostnames
+  libvirt_admin = local.libvirt_admin
+  libvirt_ip    = local.libvirt_ip
+  latitude      = var.latitude
+  longitude     = var.longitude
+  clustername   = var.clustername
+  qcow2         = var.qcow2
 }
 
 module "volterraedge" {

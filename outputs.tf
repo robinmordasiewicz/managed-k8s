@@ -11,5 +11,5 @@ output "appstacksite" {
 }
 
 output "kvmappstack" {
-   value = module.libvirt.kvmappstack[*]
+  value = module.libvirt.kvmappstack[*]
 }

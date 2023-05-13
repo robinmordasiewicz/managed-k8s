@@ -1,5 +1,5 @@
 terraform {
- required_providers {
+  required_providers {
     volterra = {
       source  = "volterraedge/volterra"
       version = ">= 0.11.21"
@@ -9,10 +9,10 @@ terraform {
       version = ">= 0.7.1"
     }
   }
-#  cloud {
-#    organization = "bankexample"
-#    workspaces {
-#      name = "k8s"
-#    }
-#  }
+  #  cloud {
+  #    organization = "bankexample"
+  #    workspaces {
+  #      name = "k8s"
+  #    }
+  #  }
 }

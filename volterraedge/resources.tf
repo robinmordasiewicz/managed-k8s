@@ -53,14 +53,14 @@ resource "volterra_k8s_cluster_role_binding" "argocd_crb2" {
 
 resource "volterra_k8s_cluster" "appstackk8s" {
   name                              = var.clustername
-  namespace = data.volterra_namespace.system.name
+  namespace                         = data.volterra_namespace.system.name
   no_cluster_wide_apps              = true
   use_default_cluster_role_bindings = true
   use_default_cluster_roles         = true
   cluster_scoped_access_permit      = true
   global_access_enable              = true
   local_access_config {
-    local_domain = "${var.localdomain}"
+    local_domain = var.localdomain
     default_port = true
   }
 
@@ -88,12 +88,12 @@ resource "volterra_k8s_cluster" "appstackk8s" {
     }
   }
 
-  no_insecure_registries       = true
-  use_default_psp = true
+  no_insecure_registries = true
+  use_default_psp        = true
 }
 
 resource "volterra_voltstack_site" "appstacksite" {
-  name = var.clustername
+  name      = var.clustername
   namespace = data.volterra_namespace.system.name
   labels = {
     "ves.io/provider" = "ves-io-VMWARE"
@@ -123,17 +123,17 @@ resource "volterra_voltstack_site" "appstacksite" {
 }
 
 resource "time_sleep" "wait_60_seconds" {
-  depends_on = [ var.kvmappstack ]
+  depends_on      = [var.kvmappstack]
   create_duration = "60s"
 }
 
 resource "volterra_registration_approval" "node-registration" {
   depends_on = [time_sleep.wait_60_seconds]
   #count        = length(local.hostnames)
-  count         = length(var.kvmappstack)
+  count        = length(var.kvmappstack)
   cluster_name = var.clustername
   #hostname     = local.hostnames[count.index]
-  hostname      = var.kvmappstack[count.index]
+  hostname     = var.kvmappstack[count.index]
   cluster_size = length(var.masternodes)
   retry        = 18
   wait_time    = 11

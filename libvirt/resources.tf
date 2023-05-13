@@ -33,14 +33,14 @@ resource "libvirt_volume" "volume" {
 }
 
 resource "libvirt_domain" "kvmappstack" {
-  count      = length(var.hostnames)
-  name       = var.hostnames[count.index]
+  count       = length(var.hostnames)
+  name        = var.hostnames[count.index]
   description = var.appstacksite
-  memory     = 16389
-  vcpu       = 4
-  autostart  = true
-  qemu_agent = false
-  arch       = "x86_64"
+  memory      = 16389
+  vcpu        = 4
+  autostart   = true
+  qemu_agent  = false
+  arch        = "x86_64"
   xml {
     xslt = templatefile("${path.module}/machine.xsl", {})
   }

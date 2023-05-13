@@ -3,12 +3,12 @@ variable "VOLT_API_P12_FILE" {
 }
 
 variable "VES_P12_PASSWORD" {
-  type = string
+  type      = string
   sensitive = true
 }
 
 variable "LIBVIRT_DEFAULT_URI" {
-  type = string
+  type    = string
   default = "qemu:///system"
 }
 
@@ -26,7 +26,6 @@ locals {
   VOLT_API_P12_FILE   = var.VOLT_API_P12_FILE
   VES_P12_PASSWORD    = var.VES_P12_PASSWORD
   LIBVIRT_DEFAULT_URI = var.LIBVIRT_DEFAULT_URI
-  tenant              = var.tenant
   libvirt_admin       = var.libvirt_admin
   libvirt_ip          = var.libvirt_ip
 }
@@ -72,22 +71,20 @@ variable "certifiedhardware" {
 }
 
 variable "latitude" {
-  type    = string
-  default = "43.650757"
+  type = string
 }
 
 variable "longitude" {
-  type    = string
-  default = "-79.43744"
+  type = string
 }
 
-variable "dnsservers" {
-  type = map(string)
-  default = {
-    primary   = "8.8.8.8"
-    secondary = "8.8.4.4"
-  }
-}
+#variable "dnsservers" {
+#  type = map(string)
+#  default = {
+#    primary   = "8.8.8.8"
+#    secondary = "8.8.4.4"
+#  }
+#}
 
 variable "clustername" {
   type    = string
@@ -95,7 +92,12 @@ variable "clustername" {
 }
 
 variable "k8s_cluster_name" {
-  type = string
+  type    = string
+  default = "k8s-profile"
+}
+
+variable "k8scluster" {
+  type    = string
   default = "k8s-profile"
 }
 
@@ -104,23 +106,17 @@ variable "localdomain" {
   default = "local"
 }
 
-variable "k8scluster" {
-  type    = string
-  default = "k8s-profile"
-}
-
 variable "token" {
   type    = string
   default = ""
 }
 
 variable "address" {
-  type    = string
-  default = "26 Margueretta, Toronto Ontario"
+  type = string
 }
 
 variable "kvmappstack" {
-  type = any
+  type    = any
   default = []
 }
 
