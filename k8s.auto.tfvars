@@ -1,8 +1,7 @@
 # libvirt
-k8s_cluster_name    = "k8s-cluster"
-libvirtadmin        = "robin"
-libvirtip           = "192.168.1.95"
-LIBVIRT_DEFAULT_URI = "qemu:///system"
+k8s_cluster_name = "k8s-cluster"
+libvirtadmin     = "robin"
+libvirtip        = "192.168.1.95"
 
 # volterraedge
 masternodes       = ["main01"]

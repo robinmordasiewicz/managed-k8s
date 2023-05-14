@@ -17,11 +17,12 @@ variable "LIBVIRT_DEFAULT_URI" {
 }
 
 locals {
-  hostnames           = concat(var.masternodes, var.workernodes)
-  VOLT_API_URL        = var.VOLT_API_URL
-  VOLT_API_P12_FILE   = var.VOLT_API_P12_FILE
-#  VES_P12_PASSWORD    = var.VES_P12_PASSWORD
-  LIBVIRT_DEFAULT_URI = var.LIBVIRT_DEFAULT_URI
+  hostnames         = concat(var.masternodes, var.workernodes)
+  VOLT_API_URL      = var.VOLT_API_URL
+  VOLT_API_P12_FILE = var.VOLT_API_P12_FILE
+  #  VES_P12_PASSWORD    = var.VES_P12_PASSWORD
+  #LIBVIRT_DEFAULT_URI = var.LIBVIRT_DEFAULT_URI
+  LIBVIRT_DEFAULT_URI = "qemu+ssh://${var.libvirtadmin}@${var.libvirtip}/system?sshauth=privkey&no_verify=1"
   libvirtadmin        = var.libvirtadmin
   libvirtip           = var.libvirtip
 }

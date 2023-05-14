@@ -2,17 +2,9 @@ variable "hostnames" {
   type    = list(string)
   default = []
 }
-variable "libvirtadmin" {
+variable "LIBVIRT_DEFAULT_URI" {
   type    = string
-  default = ""
-}
-variable "libvirtip" {
-  type    = string
-  default = ""
-}
-variable "uri" {
-  type    = string
-  default = ""
+  default = "qemu:///system"
 }
 variable "clustername" {
   type = string
