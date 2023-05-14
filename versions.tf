@@ -11,9 +11,8 @@ terraform {
   }
   cloud {
     organization = "bankexample"
-
     workspaces {
-      name = "workspace-k8s"
+      tags = ["k8s-dev", "k8s-stg", "k8s-prd"]
     }
   }
 }
