@@ -2,10 +2,10 @@ variable "VOLT_API_P12_FILE" {
   type = string
 }
 
-variable "VES_P12_PASSWORD" {
-  type      = string
-  sensitive = true
-}
+#variable "VES_P12_PASSWORD" {
+#  type      = string
+#  sensitive = true
+#}
 
 variable "VOLT_API_URL" {
   type = string
@@ -18,9 +18,9 @@ variable "LIBVIRT_DEFAULT_URI" {
 
 locals {
   hostnames           = concat(var.masternodes, var.workernodes)
-  url                 = var.VOLT_API_URL
+  VOLT_API_URL        = var.VOLT_API_URL
   VOLT_API_P12_FILE   = var.VOLT_API_P12_FILE
-  VES_P12_PASSWORD    = var.VES_P12_PASSWORD
+#  VES_P12_PASSWORD    = var.VES_P12_PASSWORD
   LIBVIRT_DEFAULT_URI = var.LIBVIRT_DEFAULT_URI
   libvirtadmin        = var.libvirtadmin
   libvirtip           = var.libvirtip

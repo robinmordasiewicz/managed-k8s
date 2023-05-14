@@ -17,7 +17,7 @@ module "libvirt" {
 module "volterraedge" {
   source            = "./volterraedge"
   VOLT_API_P12_FILE = var.VOLT_API_P12_FILE
-  VES_P12_PASSWORD  = var.VES_P12_PASSWORD
+#  VES_P12_PASSWORD  = var.VES_P12_PASSWORD
   VOLT_API_URL      = var.VOLT_API_URL
   clustername       = var.clustername
   localdomain       = var.localdomain

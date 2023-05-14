@@ -1,5 +1,5 @@
 variable "VOLT_API_P12_FILE" {}
-variable "VES_P12_PASSWORD" {}
+#variable "VES_P12_PASSWORD" {}
 variable "VOLT_API_URL" {}
 variable "clustername" {}
 variable "localdomain" {}
