@@ -1,5 +1,6 @@
 variable "VOLT_API_P12_FILE" {}
 variable "VES_P12_PASSWORD" {}
+variable "VOLT_API_URL" {}
 variable "clustername" {}
 variable "localdomain" {}
 variable "k8scluster" {}
@@ -8,7 +9,6 @@ variable "workernodes" {}
 variable "latitude" {}
 variable "longitude" {}
 variable "address" {}
-variable "url" {}
 variable "token" {
   type    = string
   default = ""

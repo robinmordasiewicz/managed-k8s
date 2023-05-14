@@ -1,9 +1,0 @@
-masternodes         = ["main01"]
-k8s_cluster_name    = "k8s-cluster"
-libvirt_admin       = "kvmusername"
-libvirt_ip          = "192.168.1.1"
-VOLT_API_P12_FILE   = "acmecorp.console.ves.volterra.io.api-creds.p12"
-latitude            = "43.6449"
-longitude           = "-79.3838"
-address             = "151 Front Street, Toronto, Ontario"
-LIBVIRT_DEFAULT_URI = "qemu:///system"
