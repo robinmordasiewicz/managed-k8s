@@ -22,8 +22,8 @@ locals {
   VOLT_API_P12_FILE   = var.VOLT_API_P12_FILE
   VES_P12_PASSWORD    = var.VES_P12_PASSWORD
   LIBVIRT_DEFAULT_URI = var.LIBVIRT_DEFAULT_URI
-  libvirt_admin       = var.libvirt_admin
-  libvirt_ip          = var.libvirt_ip
+  libvirtadmin        = var.libvirtadmin
+  libvirtip           = var.libvirtip
 }
 
 variable "masternodes" {
@@ -36,11 +36,11 @@ variable "workernodes" {
   default = []
 }
 
-variable "libvirt_admin" {
+variable "libvirtadmin" {
   type = string
 }
 
-variable "libvirt_ip" {
+variable "libvirtip" {
   type = string
 }
 

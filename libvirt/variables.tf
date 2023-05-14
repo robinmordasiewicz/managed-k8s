@@ -2,11 +2,11 @@ variable "hostnames" {
   type    = list(string)
   default = []
 }
-variable "libvirt_admin" {
+variable "libvirtadmin" {
   type    = string
   default = ""
 }
-variable "libvirt_ip" {
+variable "libvirtip" {
   type    = string
   default = ""
 }
